@@ -11,31 +11,33 @@ Can use functions in different ways:
 
 Example Problem: 
 
-Solve for x. 
+    Solve for x. 
 
-3/4 = x/100 
+    3/4 = x/100 
 
 
 Code: 
 
-problem = [3, 4, 'x', 100] 
+  problem = [3, 4, 'x', 100] 
 
-print(ratio(problem)) 
+  print(ratio(problem)) 
 
->>>75 
+  >>>75 
 
 
 Alt Code: 
 
-print(ratio_num(3,4,100))
+  print(ratio_num(3,4,100))
 
 
 Problem: 
 
-Maintain aspect ratio of 16/9 for video player, regardless of window size. Window Height has been shrunk to 300px. 
+  Maintain aspect ratio of 16/9 for video player, regardless of window size.
+  
+  Window Height has been shrunk to 300px. 
 
 Code: 
 
-window_height = 300 
-
-window_width = ratio(16, 9, 'x', window_height)
+  window_height = 300 
+  
+  window_width = ratio(16, 9, 'x', window_height)
