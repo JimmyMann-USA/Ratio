@@ -2,8 +2,11 @@
 Ratio functions return value for unknown variable in fraction set equal to a specific ratio.
 Can be used to lock aspect ratios. 
 Can use functions in different ways: 
+
 (1) ratio_num() --Solve for unknown Numerator for fraction set equal to a specific ratio.
+
 (2) ratio_den()--- Solve for unknown Denominator '' '' 
+
 (3) Solve for unknown variable in list corresponding to fraction set equal to a specific ratio, and determines whether you're solving for numerator or denominator.  
 
 Example Problem: 
