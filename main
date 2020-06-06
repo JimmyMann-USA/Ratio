@@ -1,22 +1,15 @@
 
-# Solves for the numerator to fit a desired ratio, with desired numerator, desired denominator, and current denominator.
 def ratio_num(d_num, d_den, den):
     '''d_num is desired numerator, d_den is desired denominator, and den is known denominator.'''
-    # First step- Cross Multiply.
-        ## For simplicity we don't deal with coefficients. Instead, set rightside = to d_den and isolate in next step if necc.
     leftside = (d_num*den)
     rightside = d_den
-    # Second step- Isolate variable if neccessary.
     if rightside == 1:
         return leftside
     elif rightside != 1:
         return leftside/rightside
-
-# Solves for the denominator.
+        
 def ratio_den(d_num, d_den, num):
     '''d_num is desired numerator, d_den is desired denominator, and den is known numerator.'''
-    # First step- Cross Multiply.
-        ## Same as above, but set right_side to d_num and isolate in next step if necc.
     leftside = (num*d_den)
     rightside = d_num
     if rightside == 1:
