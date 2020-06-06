@@ -7,7 +7,7 @@ Can use functions in different ways:
 
 (2) ratio_den()--- Solve for unknown Denominator '' '' 
 
-(3) Solve for unknown variable in list corresponding to fraction set equal to a specific ratio, and determines whether you're solving for numerator or denominator.  
+(3) ratio()--- Solve for unknown variable in list corresponding to fraction set equal to a specific ratio, and determines whether you're solving for numerator or denominator.  
 
 Problem: 
 -----------------
