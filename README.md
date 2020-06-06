@@ -10,14 +10,14 @@ Can use functions in different ways:
 (3) Solve for unknown variable in list corresponding to fraction set equal to a specific ratio, and determines whether you're solving for numerator or denominator.  
 
 (1-P) Problem: 
-
+-----------------
     Solve for x. 
 
     3/4 = x/100 
 
 
 (1-S) Code: 
-
+------------
   problem = [3, 4, 'x', 100] 
 
   print(ratio(problem)) 
@@ -26,18 +26,19 @@ Can use functions in different ways:
 
 
 (1-Sa) Alt Code: 
-
+--------------
   print(ratio_num(3,4,100))
-
+  
+---------------------------------------------------------
 
 (2-P) Problem: 
-
+-------------------
   Maintain aspect ratio of 16/9 for video player, regardless of window size.
   
   Window Height has been shrunk to 300px. 
 
 (2-S) Code: 
-
+---------
   window_height = 300 
   
   window_width = ratio(16, 9, 'x', window_height)
