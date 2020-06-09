@@ -1,21 +1,13 @@
 
+# Solves for the numerator to fit a desired ratio, with desired numerator, desired denominator, and current denominator.
 def ratio_num(d_num, d_den, den):
-    '''d_num is desired numerator, d_den is desired denominator, and den is known denominator.'''
-    leftside = (d_num*den)
-    rightside = d_den
-    if rightside == 1:
-        return leftside
-    elif rightside != 1:
-        return leftside/rightside
-        
+    # Automates Cross Multiplying and Isolating Variable
+    return (d_num * den)/d_den
+
+# Solves for the denominator.
 def ratio_den(d_num, d_den, num):
-    '''d_num is desired numerator, d_den is desired denominator, and den is known numerator.'''
-    leftside = (num*d_den)
-    rightside = d_num
-    if rightside == 1:
-        return leftside
-    elif rightside != 1:
-        return leftside/rightside
+    # Automates Cross Multiplying and isolating variable
+    return (d_den * num)/d_num
 
 def ratio(list=[]):
     '''Cross-Multiplication Solver. Returns what you're solving for.
@@ -31,7 +23,10 @@ def ratio(list=[]):
             return ratio_den(list[0], list[1], list[2])
         else:
             print('Error:\n\t Variable not included or in wrong position.\n Variable only accepted in position 3 or 4')
-    elif len(list) < 4:
-        print('Error:\n\t List must be 4 items long. Variable must be in position 3 or 4.')
     elif len(list) > 4:
+        print('Error:\n\t List must be 4 items long. Variable must be in position 3 or 4.')
+    elif len(list) < 4:
         print('Error:\n\t List is too short. Please add variable in position 3 or 4')
+
+# r = [1, 4, 'x', 300]
+# print(ratio(r))
